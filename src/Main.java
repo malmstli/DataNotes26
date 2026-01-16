@@ -1,13 +1,15 @@
 public class Main {
     public static void main(String[] args){
-        System.out.println("hello");
 
-        Car car = new Car( "VW" );
-        Car car2 = new Car( "Tesla");
+        Shirt shirt1 = new Shirt("Nike", "White", 40.0);
+        Shirt shirt2 = new Shirt("Adidas", "Black", 50.0);
 
-        System.out.println(car.getName());
-        car.setName("volvo");
-        System.out.println(car.getName());
-        System.out.println(car2.getName());
+        System.out.println(shirt1.getBrand());
+        System.out.println(shirt1.getColor());
+        System.out.println(shirt1.getPrice());
+
+        System.out.println(shirt2.getBrand());
+        System.out.println(shirt2.getColor());
+        System.out.println(shirt2.getPrice());
     }
 }
