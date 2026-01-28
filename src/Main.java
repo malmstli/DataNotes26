@@ -3,7 +3,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Random rand = new Random();
+
+        int myInt = Utils.getIntInput("Ange heltal: ");
+        System.out.println("Du skrev: " + myInt);
+
+       /* Random rand = new Random();
         Scanner myObj = new Scanner(System.in);
 
         while (true) {
@@ -19,6 +23,9 @@ public class Main {
                 int tal = rand.nextInt(20);
                 System.out.println(tal);
             }
-        }
+        } */
+
+
     }
 }
+
