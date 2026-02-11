@@ -1,31 +1,19 @@
-import java.util.Random;
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
 
-        int myInt = Utils.getIntInput("Ange heltal: ");
-        System.out.println("Du skrev: " + myInt);
+        String[] arr = { "Apple", "Banana", "Orange" , "berries"};
 
-       /* Random rand = new Random();
-        Scanner myObj = new Scanner(System.in);
+        String[] reverse = new String[arr.length];
 
-        while (true) {
-            System.out.println("enter för nytt, q för att avsluta");
-            String val = myObj.nextLine();
+        for (int i = 0; i < arr.length; i++) {
 
-            if (val.equalsIgnoreCase("q")) {
-                System.out.println("avslutas");
-                break;
-            }
-
-            if (val.isEmpty()) {
-                int tal = rand.nextInt(20);
-                System.out.println(tal);
-            }
-        } */
-
-
+            reverse[i] = arr[arr.length - 1 -i];
+            
+        }
+        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(reverse));
     }
 }
 
