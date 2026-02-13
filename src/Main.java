@@ -3,17 +3,15 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        String[] arr = { "Apple", "Banana", "Orange" , "berries"};
+        String[] days = { "må", "ti", "on" , "to" , "fr" , "lö" , "sö" };
 
-        String[] reverse = new String[arr.length];
+        int today = 0; // måndag
+        int step = 5;
+        int newDay = (today + step ) % days.length;
 
-        for (int i = 0; i < arr.length; i++) {
-
-            reverse[i] = arr[arr.length - 1 -i];
-            
-        }
-        System.out.println(Arrays.toString(arr));
-        System.out.println(Arrays.toString(reverse));
+        System.out.printf("I dag är det: %s\n",days[today]);
+        System.out.printf("Antal dagar i mellan: %s\n", step);
+        System.out.printf("Om fem dagar är det: %s\n", days[newDay]);
     }
 }
 
